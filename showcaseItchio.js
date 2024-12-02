@@ -65,7 +65,7 @@ async function directFetch(url) {
     return b;
 }
 
-directFetch("https://atinas.alreflections.com/sitemap/blogload.php?u=https://itch.io/api/1/atij2d75QwTDXTu6bGSDASiHyPbjswJkCROiSWcH/my-games&user=api").then(gamesData=>JSON.parse(gamesData).games.forEach(game => {
+directFetch("https://atinas.alreflections.net/sitemap/blogload.php?u=https://itch.io/api/1/atij2d75QwTDXTu6bGSDASiHyPbjswJkCROiSWcH/my-games&user=api").then(gamesData=>JSON.parse(gamesData).games.forEach(game => {
   var gameHTML = `
     <div class='game'>
       <img alt='${game.title}' src='${game.cover_url}'/>
