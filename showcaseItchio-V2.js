@@ -65,7 +65,7 @@ async function directFetch(url) {
     return b;
 }
 
-directFetch("https://apiproxy.alreflections.net/corsload/json/"+btoa("https://itch.io/api/1/atij2d75QwTDXTu6bGSDASiHyPbjswJkCROiSWcH/my-games")).then(gamesData=>JSON.parse(gamesData).games.forEach(game => {
+directFetch("https://corsload.eranajam123.workers.dev/corsload/"+btoa("https://itch.io/api/1/atij2d75QwTDXTu6bGSDASiHyPbjswJkCROiSWcH/my-games")).then(gamesData=>JSON.parse(gamesData).games.forEach(game => {
   var gameHTML = `
     <div class='game'>
       <img alt='${game.title}' src='${game.cover_url}'/>
